@@ -22,7 +22,7 @@ app.get("/news/:id", (req, res) => {
   res.send(selectedId);
 });
 
-app.get("/catagory/:id", (req, res) => {
+app.get("/catagories/:id", (req, res) => {
   const id = req.params.id;
   if (id == 0) {
     res.send(news);
